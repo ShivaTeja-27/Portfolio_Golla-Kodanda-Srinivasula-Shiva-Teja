@@ -1,0 +1,199 @@
+/* styles.css */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: #333;
+    animation: fadeIn 2s ease-in;
+    line-height: 1.6;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    background: #2a2a2a;
+    padding: 10px 0;
+    animation: slideDown 1s ease-in-out;
+}
+
+#navbar a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    padding: 50px 20px;
+    background-color: #ffebcd;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeInUp 1.5s ease-out;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.profile-photo img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.5s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-photo img:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    margin: 20px 0 10px;
+    font-size: 2.5em;
+    color: #8b4513;
+}
+
+p {
+    margin: 5px 0;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f7f7f7;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeInUp 1.5s ease-out;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    text-align: left;
+}
+
+section:nth-of-type(odd) {
+    background-color: #e7f3fe;
+}
+
+section:nth-of-type(even) {
+    background-color: #f0f7f4;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Unique title colors for each section */
+#about h2 {
+    color: #ff6347; /* Tomato */
+}
+
+#social-links h2 {
+    color: #4682b4; /* Steel Blue */
+}
+
+#education h2 {
+    color: #32cd32; /* Lime Green */
+}
+
+#work-experience h2 {
+    color: #ffa500; /* Orange */
+}
+
+#certificates h2 {
+    color: #6a5acd; /* Slate Blue */
+}
+
+#projects h2 {
+    color: #20b2aa; /* Light Sea Green */
+}
+
+#skills h2 {
+    color: #ff69b4; /* Hot Pink */
+}
+
+#soft-skills h2 {
+    color: #8b008b; /* Dark Magenta */
+}
+
+#languages h2 {
+    color: #b22222; /* Firebrick */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin: 0;
+    color: #2a2a2a;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #2a7fff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2a2a2a;
+    color: white;
+    animation: fadeIn 2s ease-in;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
